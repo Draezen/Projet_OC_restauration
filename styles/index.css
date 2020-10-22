@@ -36,12 +36,94 @@ a:link, a:visited{
     color: black;
 }
 
+*{
+    box-sizing: border-box;
+}
 
 /* -------------------------------------------  Header  ------------------------------------------- */
 
+.header{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo{
+    margin-bottom: 1em;
+    background-color: #ffff;
+}
+
+.header-flex{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 27em;
+}
+
+
+.header__search{
+    width: 100%;
+    height: 4em;
+    background-color: #e4e4e4;
+    border-style: solid none none none;
+    border-top: 0.2em solid #d1d1d1;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__search i{
+    font-size: 1.5em;
+    text-align: right;
+    width: 30%;
+}
+
+.header__search input{
+    background-color: #e4e4e4;
+    border-style: none;
+    font-size: 1.5em;
+    width: 65%;
+}
+
+.header__heading{
+    text-align: center;
+    width: 80%;
+    margin: 0;
+}
+
+.header__description{
+    text-align: center;
+    font-size: 1.3em;
+}
+
 /* --------------------------------------  Navigation  -------------------------------------------*/
 
+.explore{
+    margin: 0;
+    margin-bottom: 4em;
+}
+
+.explore__button{
+    color: #ffff;
+    font-size: 1.3em;
+    border-radius: 2em;
+    background: linear-gradient(to right, #FF97DA 0%, #9356DC 100%);
+    padding: 1em;
+}
+
 /* ------------------------------------ Main  ----------------------------------------------- */
+
+/* ASIDE howto */ 
+
+/* ARTICLE restaurant-section*/ 
+
+/* restaurant-prev */ 
+
+.restaurant-prev__image{
+    width: 100%;
+}
 
 /* ----------------------------------------  Footer  -------------------------------------*/
 
