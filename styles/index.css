@@ -1,0 +1,47 @@
+/*
+Auteur :Thomas DANGER
+Mise en forme page INDEX.html Projet 3 : Ohmyfood
+*/
+
+
+/* ------------------------------  Définition des polices perso  ----------------------------- */
+
+/* Logo et titres */
+@font-face{
+    font-family: 'Shrikhand';
+    src: url('/polices/Shrikhand-Regular.ttf');
+}
+
+/* texte */
+@font-face{
+    font-family: 'Roboto';
+    src: url('/polices/Roboto-Regular.ttf');
+}
+
+
+/* -------------------------------  Elements principaux de la page  ------------------------------- */
+
+body{
+    font-family: 'Roboto';
+    width: 100%;
+    margin: auto;
+}
+
+/* liens */
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: black;
+}
+
+
+/* -------------------------------------------  Header  ------------------------------------------- */
+
+/* --------------------------------------  Navigation  -------------------------------------------*/
+
+/* ------------------------------------ Main  ----------------------------------------------- */
+
+/* ----------------------------------------  Footer  -------------------------------------*/
+
