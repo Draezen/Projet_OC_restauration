@@ -1,0 +1,228 @@
+/*
+Auteur :Thomas DANGER
+Mise en forme page INDEX.html Projet 3 : Ohmyfood
+*/
+
+
+/* ------------------------------  Définition des polices perso  ----------------------------- */
+
+/* Logo et titres */
+@font-face{
+    font-family: 'Shrikhand';
+    src: url('/polices/Shrikhand-Regular.ttf');
+}
+
+/* texte */
+@font-face{
+    font-family: 'Roboto';
+    src: url('/polices/Roboto-Regular.ttf');
+}
+
+
+/* -------------------------------  Elements principaux de la page  ------------------------------- */
+
+body{
+    font-family: 'Roboto';
+    width: 100%;
+    margin: auto;
+    background-color: #f6f6f6;
+}
+
+/* liens */
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.primary-background{
+    background-color: #9356dc;
+}
+
+.primary-color{
+    color: #9356dc;
+}
+
+.secondary-background{
+    background-color: #ff79da;
+}
+
+.tertiary-background{
+    background-color: #99e2d0;
+}
+
+/* -------------------------------------------  Header  ------------------------------------------- */
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+/* --------------------------------------  Navigation  -------------------------------------------*/
+.header__nav{
+    display: flex;
+    justify-content: center;
+    padding: 1.7em 1.5em;
+    background-color: #ffff;
+}
+
+.fa-arrow-left{
+    font-size: 1.2em;
+    position: absolute;
+    left: 1.5em;
+    padding-top: 0.3em;
+}
+
+.header__banner{
+    width: 100%;
+    object-fit: cover;
+    object-position: 100%;
+}
+
+
+/* ------------------------------------ Main  ----------------------------------------------- */
+
+/* MENU */
+
+.menu{
+    background-color: #f6f6f6;
+    border-radius: 3em 3em 0 0;
+    z-index: 1;
+    position: relative;
+    top: -3em;
+    padding: 5%;
+}
+
+.menu__heading-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8em;
+}
+
+.menu__heading{
+    margin: 0;
+    font-family: 'Shrikhand';
+}
+
+.menu__like{
+    font-size: 2em;
+}
+
+.menu__like:hover{
+    cursor: pointer;
+}
+
+
+/* ARTICLE menu*/ 
+
+.menu__board{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.menu__board__heading{
+    margin: 0 0 1em 0;
+    font-size: 1.4em;
+}
+
+.menu__board__heading span{
+    border-bottom: 0.2em solid #99e2d0;
+    padding-bottom: 0.2em;
+}
+
+.food{
+    background-color: #FFFF;
+    border-radius: 1em;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.food:hover{
+    cursor: pointer;
+}
+
+.food__heading{
+    flex-basis: 100%;
+    margin: 0 0 0.5em 0;
+    font-size: 1.3em;
+}
+
+.food__caption{
+    margin: 0;
+    flex-basis: 80%;
+}
+
+.food__price{
+    font-weight: bold;
+    margin: 0;
+    flex-basis: 20%;
+    text-align: right;
+}
+
+.menu__button{
+    color: #ffff;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 2em;
+    background: linear-gradient(to bottom right, #FF97DA 0%, #9356DC 100%);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 1em 3em;
+    display: block;
+    margin: 2em auto 0 auto;
+}
+
+.menu__button:hover{
+    cursor: pointer;
+}
+
+.menu__button:focus{   
+    outline: none;
+}
+
+/* ----------------------------------------  Footer  -------------------------------------*/
+
+.footer{
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__heading{
+    color: white;
+    font-family: 'Shrikhand';
+    font-size: 1.2em;
+    font-weight: normal;
+    padding-left: 1.4em;
+    margin-bottom: 0;
+}
+
+
+.footer__list{
+    list-style: none;
+    color: white;
+    padding-left: 1.5em;
+}
+
+.footer__list li{
+    margin-bottom: 0.7em;
+}
+
+.footer__icon{
+    margin-right: 0.7em;
+    font-size: 0.8em;
+}
+
+.fa-utensils{
+    margin-right: 1.1em;
+}
+
+.footer__link{
+   color: white;
+}
