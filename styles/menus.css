@@ -96,7 +96,7 @@ a{
 
 .menu__heading-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 8em;
 }
@@ -104,6 +104,8 @@ a{
 .menu__heading{
     margin: 0;
     font-family: 'Shrikhand';
+    font-size: 1.7em;
+    font-weight: normal;
 }
 
 .menu__like{
@@ -139,7 +141,7 @@ a{
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 0.7em;
     margin-bottom: 1em;
 }
 
@@ -148,21 +150,21 @@ a{
 }
 
 .food__heading{
-    flex-basis: 100%;
-    margin: 0 0 0.5em 0;
-    font-size: 1.3em;
+    flex-basis: 90%;
+    margin: 0 0 0.4em 0;
+    font-size: 1.2em;
 }
 
 .food__caption{
     margin: 0;
-    flex-basis: 80%;
+    flex-basis: 90%;
+    font-size: 0.9em;
 }
 
 .food__price{
     font-weight: bold;
     margin: 0;
-    flex-basis: 20%;
-    text-align: right;
+    flex-basis: 10%;
 }
 
 .menu__button{
