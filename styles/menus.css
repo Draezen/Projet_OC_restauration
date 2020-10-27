@@ -18,6 +18,16 @@ Mise en forme page INDEX.html Projet 3 : Ohmyfood
     src: url('/polices/Roboto-Regular.ttf');
 }
 
+@font-face{
+    font-family: 'Roboto-Light';
+    src: url('/polices/Roboto-Light.ttf');
+}
+
+@font-face{
+    font-family: 'Roboto-Thin';
+    src: url('/polices/Roboto-Thin.ttf');
+}
+
 
 /* -------------------------------  Elements principaux de la page  ------------------------------- */
 
@@ -76,6 +86,7 @@ a{
 
 .header__banner{
     width: 100%;
+    max-height: 15em;
     object-fit: cover;
     object-position: 100%;
 }
@@ -109,7 +120,7 @@ a{
 }
 
 .menu__like{
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 .menu__like:hover{
@@ -127,7 +138,8 @@ a{
 
 .menu__board__heading{
     margin: 0 0 1em 0;
-    font-size: 1.4em;
+    font-size: 1em;
+    font-family: 'Roboto-Thin';
 }
 
 .menu__board__heading span{
