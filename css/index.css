@@ -27,8 +27,8 @@ Mise en forme page INDEX.html Projet 3 : Ohmyfood
 
 body{
     font-family: 'Roboto';
-    width: 100%;
     margin: auto;
+    width: 100%;
 }
 
 /* liens */
@@ -59,43 +59,43 @@ a{
 /* -------------------------------------------  Header  ------------------------------------------- */
 
 .header{
-    padding-top: 1.7em;
     display: flex;
     flex-direction: column;
+    padding-top: 1.7em;
 }
 
 .header__logo{
-    margin-bottom: 1em;
     background-color: #ffff;
+    margin-bottom: 1em;
 }
 
 .header-flex{
+    align-items: center;
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     height: 27em;
+    justify-content: space-between;
     padding-bottom:1.5em;
 }
 
 
 .header__search{
-    width: 100%;
-    height: 4em;
+    align-items: center;
     background-color: #eaeaea;
     border-style: solid none none none;
     border-top: 0.2em solid #d1d1d1;   
     display: flex;
+    height: 4em;
     justify-content: space-around;
-    align-items: center;
+    width: 100%;
 }
 
 .header__search i{
     font-size: 1.5em;
+    margin-right: 1em;
     text-align: right;
     width: 30%;
-    margin-right: 1em;
 }
 
 .header__search input{
@@ -106,18 +106,18 @@ a{
 }
 
 .header__heading{
+    font-size: 1.6em;
+    margin: 0;
     text-align: center;
     width: 80%;
-    margin: 0;
-    font-size: 1.6em;
 }
 
 .header__description{
-    text-align: center;
     font-size: 1.1em;
     font-family: 'Roboto-Light';
     margin: 0;
     padding-bottom: 1em;
+    text-align: center;
 }
 
 /* --------------------------------------  Navigation  -------------------------------------------*/
@@ -128,11 +128,11 @@ a{
 }
 
 .explore__button{
-    color: #ffff;
-    font-size: 1.3em;
     border-radius: 2em;
     background: linear-gradient(to bottom right, #FF97DA 0%, #9356DC 100%);
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+    color: #ffff;
+    font-size: 1.3em;
     padding: 1em;
 }
 
@@ -158,16 +158,16 @@ a{
 }
 
 .howto__list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 5em;
     background-color: #f6f6f6;
     border-radius: 1.5em;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    list-style: none;
     padding: 0;
+    width: 100%;
 }
 
 .howto :nth-child(4){
@@ -182,15 +182,15 @@ a{
 .howto__list__number{
     border-radius: 50%;
     color: #ffff;
+    left: 0.7em;  
     padding: 0.2em 0.5em; 
     position: absolute;
-    left: 0.7em;    
 }
 
 .howto__list__icon{
+    color: grey;
     margin-right: 1.5em;
     vertical-align: bottom;
-    color: grey;
 }
 
 .howto__list__icon i{
@@ -231,51 +231,50 @@ a{
 }
 
 .restaurant-prev__image-container{
-    position: relative;
     height: 70%;
+    position: relative;
 }
 
 .restaurant-prev__image{
-    width: 100%;
-    height: 100%;
     border-radius: 1em 1em 0 0;
+    height: 100%;
     object-fit: cover;
     object-position: 100%;
+    width: 100%;
 }
 .restaurant-prev__new{
-    position: absolute;
-    top: 0em;
-    right: 0.7em;
-    font-size: 1em;
-    padding: 0.4em;
     color: #008766;
     font-weight: bold;
+    font-size: 1em;
+    right: 0.7em;
+    top: 0em;
+    padding: 0.4em;
+    position: absolute;
 }
 
 .restaurant-prev__text-container{
+    align-items: flex-start;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: flex-start;
     height: 30%;
+    justify-content: space-around;
     padding: 0 1em;
 }
 
 .restaurant-prev__heading{
-    margin: 0.8em 0 0 0;
     font-size: 1.2em;
+    margin: 0.8em 0 0 0;
     width: 80%;
 }
 
 .restaurant-prev__place{
-    margin: 0 0 0.5em 0;
     font-size: 1.1em;
+    margin: 0 0 0.5em 0;
 }
 
 .restaurant-prev__like{
-    margin: 0;
     font-size: 1.5em;
-    margin-left: 1em;
+    margin: 0 0 0 1em;
 }
 
 
@@ -285,22 +284,21 @@ a{
     background-color: #353535;
     display: flex;
     flex-direction: column;
-
 }
 
 .footer__heading{
-    color: white;
+    color: #ffff;
     font-family: 'Shrikhand';
     font-size: 1.2em;
     font-weight: normal;
-    padding-left: 1.4em;
     margin-bottom: 0;
+    padding-left: 1.4em;
 }
 
 
 .footer__list{
+    color: #ffff;
     list-style: none;
-    color: white;
     padding-left: 1.5em;
 }
 
@@ -309,8 +307,8 @@ a{
 }
 
 .footer__icon{
-    margin-right: 0.7em;
     font-size: 0.8em;
+    margin-right: 0.7em;
 }
 
 .fa-utensils{
@@ -318,5 +316,6 @@ a{
 }
 
 .footer__link{
-   color: white;
+   color: #ffff;
 }
+

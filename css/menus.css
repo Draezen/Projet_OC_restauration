@@ -32,10 +32,10 @@ Mise en forme page INDEX.html Projet 3 : Ohmyfood
 /* -------------------------------  Elements principaux de la page  ------------------------------- */
 
 body{
-    font-family: 'Roboto';
-    width: 100%;
-    margin: auto;
     background-color: #f6f6f6;
+    font-family: 'Roboto';
+    margin: auto;
+    width: 100%;
 }
 
 /* liens */
@@ -71,24 +71,24 @@ a{
 }
 /* --------------------------------------  Navigation  -------------------------------------------*/
 .header__nav{
+    background-color: #ffff;
     display: flex;
     justify-content: center;
     padding: 1.7em 1.5em;
-    background-color: #ffff;
 }
 
 .fa-arrow-left{
     font-size: 1.2em;
-    position: absolute;
     left: 1.5em;
     padding-top: 0.3em;
+    position: absolute;
 }
 
 .header__banner{
-    width: 100%;
     max-height: 15em;
     object-fit: cover;
     object-position: 100%;
+    width: 100%;
 }
 
 
@@ -99,24 +99,24 @@ a{
 .menu{
     background-color: #f6f6f6;
     border-radius: 3em 3em 0 0;
-    z-index: 1;
     position: relative;
-    top: -3em;
     padding: 5%;
+    top: -3em;
+    z-index: 1;
 }
 
 .menu__heading-container{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 8em;
+    justify-content: space-between;
 }
 
 .menu__heading{
-    margin: 0;
     font-family: 'Shrikhand';
     font-size: 1.7em;
     font-weight: normal;
+    margin: 0;
 }
 
 .menu__like{
@@ -137,9 +137,9 @@ a{
 }
 
 .menu__board__heading{
-    margin: 0 0 1em 0;
     font-size: 1em;
     font-family: 'Roboto-Thin';
+    margin: 0 0 1em 0;
 }
 
 .menu__board__heading span{
@@ -153,8 +153,8 @@ a{
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
     display: flex;
     flex-wrap: wrap;
-    padding: 0.7em;
     margin-bottom: 1em;
+    padding: 0.7em;
 }
 
 .food:hover{
@@ -163,32 +163,32 @@ a{
 
 .food__heading{
     flex-basis: 90%;
-    margin: 0 0 0.4em 0;
     font-size: 1.2em;
+    margin: 0 0 0.4em 0;
 }
 
 .food__caption{
-    margin: 0;
     flex-basis: 90%;
     font-size: 0.9em;
+    margin: 0;
 }
 
 .food__price{
     font-weight: bold;
-    margin: 0;
     flex-basis: 10%;
+    margin: 0;
 }
 
 .menu__button{
-    color: #ffff;
-    font-size: 1.3em;
     border: none;
     border-radius: 2em;
     background: linear-gradient(to bottom right, #FF97DA 0%, #9356DC 100%);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-    padding: 1em 3em;
+    color: #ffff;
     display: block;
+    font-size: 1.3em;
     margin: 2em auto 0 auto;
+    padding: 1em 3em;
 }
 
 .menu__button:hover{
@@ -209,18 +209,18 @@ a{
 }
 
 .footer__heading{
-    color: white;
+    color: #ffff;
     font-family: 'Shrikhand';
     font-size: 1.2em;
     font-weight: normal;
-    padding-left: 1.4em;
     margin-bottom: 0;
+    padding-left: 1.4em;
 }
 
 
 .footer__list{
+    color: #ffff;
     list-style: none;
-    color: white;
     padding-left: 1.5em;
 }
 
@@ -229,8 +229,8 @@ a{
 }
 
 .footer__icon{
-    margin-right: 0.7em;
     font-size: 0.8em;
+    margin-right: 0.7em;
 }
 
 .fa-utensils{
@@ -238,5 +238,5 @@ a{
 }
 
 .footer__link{
-   color: white;
+   color: #ffff;
 }
