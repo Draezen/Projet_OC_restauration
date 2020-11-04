@@ -36,6 +36,11 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -74,9 +79,8 @@ a{
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
-    height: 27em;
+    height: 24em;
     justify-content: space-between;
-    padding-bottom:1.5em;
 }
 
 
@@ -92,7 +96,7 @@ a{
 }
 
 .header__search i{
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-right: 1em;
     text-align: right;
     width: 30%;
@@ -101,7 +105,7 @@ a{
 .header__search input{
     background-color: #eaeaea;
     border-style: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     width: 65%;
 }
 
@@ -125,6 +129,7 @@ a{
 .explore{
     margin: 0;
     margin-bottom: 4em;
+    width: 100%;
 }
 
 .explore__button{
@@ -134,9 +139,10 @@ a{
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     color: #ffff;
     display: block;
-    font-size: 1.3em;
-    margin: 2em auto 0 auto;
-    padding: 1em 3em;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 1em 0.8em;
+    width: 65%;
 }
 
 .explore__button:hover{
@@ -166,47 +172,44 @@ a{
 .howto__heading{
     align-self: flex-start;
     font-size: 1.7em;
-    margin: 0 0 1em 0;
+    margin: 0 0 0.5em 0;
 }
 
-.howto__list{
+.howto__box{
     align-items: center;
     background-color: #f6f6f6;
-    border-radius: 1.5em;
+    border-radius: 1em;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
     display: flex;
-    height: 5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    height: 4em;
     justify-content: center;
-    list-style: none;
-    padding: 0;
-    width: 100%;
+    margin-bottom: 1.5em;
+    position: relative;
 }
 
-.howto :nth-child(4){
+.howto__box--selected{
     background-color: #9356dc33;
 }
 
-.howto__list li{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.howto__list__number{
+.howto__number{
+    background-color: #9356dc;
     border-radius: 50%;
     color: #ffff;
-    left: 0.7em;  
+    left: -15px;
     padding: 0.2em 0.5em; 
     position: absolute;
 }
 
-.howto__list__icon{
+.howto__icon{
     color: grey;
-    margin-right: 1.5em;
-    vertical-align: bottom;
+    font-size: 1.2em;
+    margin-right: 1em;
 }
 
-.howto__list__icon i{
-    font-size: 1.3em;
+.howto__icon--selected{
+    color: #9356dc;
 }
 
 

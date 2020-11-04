@@ -96,7 +96,7 @@ a{
 
 /* MENU */
 
-.menu{
+.restaurant{
     background-color: #f6f6f6;
     border-radius: 3em 3em 0 0;
     position: relative;
@@ -105,25 +105,25 @@ a{
     z-index: 1;
 }
 
-.menu__heading-container{
+.restaurant__container{
     align-items: center;
     display: flex;
     height: 8em;
     justify-content: space-between;
 }
 
-.menu__heading{
+.restaurant__heading{
     font-family: 'Shrikhand';
     font-size: 1.7em;
     font-weight: normal;
     margin: 0;
 }
 
-.menu__like{
+.restaurant__like{
     font-size: 1.7em;
 }
 
-.menu__like:hover{
+.restaurant__like:hover{
     cursor: pointer;
 }
 
@@ -136,13 +136,13 @@ a{
     margin-bottom: 1.5em;
 }
 
-.menu__board__heading{
+.menu__heading{
     font-size: 1em;
     font-family: 'Roboto-Thin';
     margin: 0 0 1em 0;
 }
 
-.menu__board__heading span{
+.menu__heading--underline {
     border-bottom: 0.2em solid #99e2d0;
     padding-bottom: 0.2em;
 }
@@ -179,7 +179,7 @@ a{
     margin: 0;
 }
 
-.menu__button{
+.restaurant__button{
     border: none;
     border-radius: 2em;
     background: linear-gradient(to bottom right, #FF97DA 0%, #9356DC 100%);
