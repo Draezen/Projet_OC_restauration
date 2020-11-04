@@ -1,0 +1,17 @@
+/*
+Auteur :Thomas DANGER
+Mise en forme page INDEX.html Projet 3 : Ohmyfood
+*/
+
+@import "./utils/variables";
+
+@import "./base/typography";
+@import "./base/reset";
+@import "./base/base";
+
+@import "./pages/menu-header";
+@import "./pages/menu-nav";
+@import "./pages/menu-restaurants";
+@import "./pages/menu-menus";
+
+@import "layouts/footer";

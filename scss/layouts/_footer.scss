@@ -1,0 +1,34 @@
+/* ----------------------------------------  Footer  -------------------------------------*/
+
+.footer{
+    background-color: $bg-footer;
+    color: $colour-white;
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        color: $colour-white;
+        font-family: 'Shrikhand';
+        font-size: 1.2em;
+        font-weight: normal;
+        margin-bottom: 0;
+        padding-left: 1.4em;
+    }
+    &__list{
+        list-style: none;
+        padding-left: 1.5em;
+        li{
+            margin-bottom: 0.7em;
+        }
+    }
+    &__icon{
+        font-size: 0.8em;
+        margin-right: 0.7em;
+    }
+    &__link{
+        color: $colour-white;
+     }
+}
+
+.fa-utensils{
+    margin-right: 1.1em;
+}

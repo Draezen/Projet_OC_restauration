@@ -1,242 +1,226 @@
+@charset "UTF-8";
 /*
 Auteur :Thomas DANGER
 Mise en forme page INDEX.html Projet 3 : Ohmyfood
 */
-
-
 /* ------------------------------  Définition des polices perso  ----------------------------- */
-
 /* Logo et titres */
-@font-face{
-    font-family: 'Shrikhand';
-    src: url('/polices/Shrikhand-Regular.ttf');
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("/polices/Shrikhand-Regular.ttf");
 }
 
 /* texte */
-@font-face{
-    font-family: 'Roboto';
-    src: url('/polices/Roboto-Regular.ttf');
+@font-face {
+  font-family: 'Roboto';
+  src: url("/polices/Roboto-Regular.ttf");
 }
 
-@font-face{
-    font-family: 'Roboto-Light';
-    src: url('/polices/Roboto-Light.ttf');
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("/polices/Roboto-Light.ttf");
 }
 
-@font-face{
-    font-family: 'Roboto-Thin';
-    src: url('/polices/Roboto-Thin.ttf');
-}
-
-
-/* -------------------------------  Elements principaux de la page  ------------------------------- */
-
-body{
-    background-color: #f6f6f6;
-    font-family: 'Roboto';
-    margin: auto;
-    width: 100%;
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url("/polices/Roboto-Thin.ttf");
 }
 
 /* liens */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-*{
-    box-sizing: border-box;
+/* listes*/
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.primary-background{
-    background-color: #9356dc;
+/*boxes*/
+* {
+  box-sizing: border-box;
 }
 
-.primary-color{
-    color: #9356dc;
-}
-
-.secondary-background{
-    background-color: #ff79da;
-}
-
-.tertiary-background{
-    background-color: #99e2d0;
+/* -------------------------------  Elements principaux de la page  ------------------------------- */
+body {
+  background-color: #f6f6f6;
+  font-family: 'Roboto';
+  margin: auto;
+  width: 100%;
 }
 
 /* -------------------------------------------  Header  ------------------------------------------- */
-
-.header{
-    display: flex;
-    flex-direction: column;
+.header {
+  display: flex;
+  flex-direction: column;
 }
+
 /* --------------------------------------  Navigation  -------------------------------------------*/
-.header__nav{
-    background-color: #ffff;
-    display: flex;
-    justify-content: center;
-    padding: 1.7em 1.5em;
+.header__nav {
+  background-color: #ffff;
+  display: flex;
+  justify-content: center;
+  padding: 1.7em 1.5em;
 }
 
-.fa-arrow-left{
-    font-size: 1.2em;
-    left: 1.5em;
-    padding-top: 0.3em;
-    position: absolute;
+.header__banner {
+  max-height: 15em;
+  object-fit: cover;
+  object-position: 100%;
+  width: 100%;
 }
 
-.header__banner{
-    max-height: 15em;
-    object-fit: cover;
-    object-position: 100%;
-    width: 100%;
+.header__icon {
+  font-size: 1.2em;
+  left: 1.5em;
+  padding-top: 0.3em;
+  position: absolute;
 }
 
-
-/* ------------------------------------ Main  ----------------------------------------------- */
-
-/* MENU */
-
-.restaurant{
-    background-color: #f6f6f6;
-    border-radius: 3em 3em 0 0;
-    position: relative;
-    padding: 5%;
-    top: -3em;
-    z-index: 1;
+/* Restaurant */
+.restaurant {
+  background-color: #f6f6f6;
+  border-radius: 3em 3em 0 0;
+  position: relative;
+  padding: 5%;
+  top: -3em;
+  z-index: 1;
 }
 
-.restaurant__container{
-    align-items: center;
-    display: flex;
-    height: 8em;
-    justify-content: space-between;
+.restaurant__container {
+  align-items: center;
+  display: flex;
+  height: 8em;
+  justify-content: space-between;
 }
 
-.restaurant__heading{
-    font-family: 'Shrikhand';
-    font-size: 1.7em;
-    font-weight: normal;
-    margin: 0;
+.restaurant__heading {
+  font-family: 'Shrikhand';
+  font-size: 1.7em;
+  font-weight: normal;
+  margin: 0;
 }
 
-.restaurant__like{
-    font-size: 1.7em;
+.restaurant__like {
+  font-size: 1.7em;
 }
 
-.restaurant__like:hover{
-    cursor: pointer;
+.restaurant__like:hover {
+  cursor: pointer;
 }
 
-
-/* ARTICLE menu*/ 
-
-.menu__board{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5em;
+.button {
+  border: none;
+  border-radius: 2em;
+  background: linear-gradient(to bottom right, #ff79da 0%, #9356dc 100%);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #ffff;
+  display: block;
+  font-size: 1.2em;
+  margin: auto;
+  padding: 1em 0.8em;
+  width: 65%;
 }
 
-.menu__heading{
-    font-size: 1em;
-    font-family: 'Roboto-Thin';
-    margin: 0 0 1em 0;
+.button:hover {
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:visited {
+  color: #ffff;
+}
+
+/* ARTICLE menu*/
+.menu__board {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.menu__heading {
+  font-size: 1em;
+  font-family: 'Roboto-Thin';
+  margin: 0 0 1em 0;
 }
 
 .menu__heading--underline {
-    border-bottom: 0.2em solid #99e2d0;
-    padding-bottom: 0.2em;
+  border-bottom: 0.2em solid #99e2d0;
+  padding-bottom: 0.2em;
 }
 
-.food{
-    background-color: #FFFF;
-    border-radius: 1em;
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1em;
-    padding: 0.7em;
+.food {
+  background-color: #ffff;
+  border-radius: 1em;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  padding: 0.7em;
 }
 
-.food:hover{
-    cursor: pointer;
+.food:hover {
+  cursor: pointer;
 }
 
-.food__heading{
-    flex-basis: 90%;
-    font-size: 1.2em;
-    margin: 0 0 0.4em 0;
+.food__heading {
+  flex-basis: 90%;
+  font-size: 1.2em;
+  margin: 0 0 0.4em 0;
 }
 
-.food__caption{
-    flex-basis: 90%;
-    font-size: 0.9em;
-    margin: 0;
+.food__caption {
+  flex-basis: 90%;
+  font-size: 0.9em;
+  margin: 0;
 }
 
-.food__price{
-    font-weight: bold;
-    flex-basis: 10%;
-    margin: 0;
-}
-
-.restaurant__button{
-    border: none;
-    border-radius: 2em;
-    background: linear-gradient(to bottom right, #FF97DA 0%, #9356DC 100%);
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
-    color: #ffff;
-    display: block;
-    font-size: 1.3em;
-    margin: 2em auto 0 auto;
-    padding: 1em 3em;
-}
-
-.menu__button:hover{
-    cursor: pointer;
-}
-
-.menu__button:focus{   
-    outline: none;
+.food__price {
+  font-weight: bold;
+  flex-basis: 10%;
+  margin: 0;
 }
 
 /* ----------------------------------------  Footer  -------------------------------------*/
-
-.footer{
-    background-color: #353535;
-    display: flex;
-    flex-direction: column;
-
+.footer {
+  background-color: #353535;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
 }
 
-.footer__heading{
-    color: #ffff;
-    font-family: 'Shrikhand';
-    font-size: 1.2em;
-    font-weight: normal;
-    margin-bottom: 0;
-    padding-left: 1.4em;
+.footer__heading {
+  color: #ffff;
+  font-family: 'Shrikhand';
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding-left: 1.4em;
 }
 
-
-.footer__list{
-    color: #ffff;
-    list-style: none;
-    padding-left: 1.5em;
+.footer__list {
+  list-style: none;
+  padding-left: 1.5em;
 }
 
-.footer__list li{
-    margin-bottom: 0.7em;
+.footer__list li {
+  margin-bottom: 0.7em;
 }
 
-.footer__icon{
-    font-size: 0.8em;
-    margin-right: 0.7em;
+.footer__icon {
+  font-size: 0.8em;
+  margin-right: 0.7em;
 }
 
-.fa-utensils{
-    margin-right: 1.1em;
+.footer__link {
+  color: #ffff;
 }
 
-.footer__link{
-   color: #ffff;
+.fa-utensils {
+  margin-right: 1.1em;
 }
+/*# sourceMappingURL=menus.css.map */

@@ -1,0 +1,49 @@
+/* ARTICLE menu*/ 
+
+.menu{
+    &__board{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5em;
+    }
+    &__heading{
+        font-size: 1em;
+        font-family: 'Roboto-Thin';
+        margin: 0 0 1em 0;
+        &--underline{
+            border-bottom: 0.2em solid $colour-tertiary;
+            padding-bottom: 0.2em;
+        }
+    }
+}
+
+.food{
+    background-color: $colour-white;
+    border-radius: 1em;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    padding: 0.7em;
+    &:hover{
+        cursor: pointer;
+    }
+    &__heading{
+        flex-basis: 90%;
+        font-size: 1.2em;
+        margin: 0 0 0.4em 0;
+    }
+    &__caption{
+        flex-basis: 90%;
+        font-size: 0.9em;
+        margin: 0;
+    }
+    &__price{
+        font-weight: bold;
+        flex-basis: 10%;
+        margin: 0;
+    }
+}
+
+
+

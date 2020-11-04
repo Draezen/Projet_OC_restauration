@@ -1,21 +1,8 @@
-/* Logo et titres */
-@font-face{
-    font-family: 'Shrikhand';
-    src: url('/polices/Shrikhand-Regular.ttf');
-}
+/* -------------------------------  Elements principaux de la page  ------------------------------- */
 
-/* texte */
-@font-face{
+body{
+    background-color: #f6f6f6;
     font-family: 'Roboto';
-    src: url('/polices/Roboto-Regular.ttf');
-}
-
-@font-face{
-    font-family: 'Roboto-Light';
-    src: url('/polices/Roboto-Light.ttf');
-}
-
-@font-face{
-    font-family: 'Roboto-Thin';
-    src: url('/polices/Roboto-Thin.ttf');
+    margin: auto;
+    width: 100%;
 }

@@ -1,0 +1,30 @@
+/* Restaurant */
+
+.restaurant{
+    background-color: $bg-articles;
+    border-radius: 3em 3em 0 0;
+    position: relative;
+    padding: 5%;
+    top: -3em;
+    z-index: 1;
+    &__container{
+        align-items: center;
+        display: flex;
+        height: 8em;
+        justify-content: space-between;
+    }
+    &__heading{
+        font-family: 'Shrikhand';
+        font-size: 1.7em;
+        font-weight: normal;
+        margin: 0;
+    }
+    &__like{
+        font-size: 1.7em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@import "../components/button";
