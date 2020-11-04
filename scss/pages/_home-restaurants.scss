@@ -1,0 +1,81 @@
+/* ARTICLE restaurant-section*/ 
+
+.restaurant-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 7%;
+    &__heading{
+        font-size: 1.7em;
+    }
+}
+
+/* restaurant-prev */ 
+
+.restaurant-prev{
+    background-color: $colour-white;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    height: 17em;
+    margin-bottom: 1.5em;
+    a{
+        color: $colour-black;
+        &:visited{
+            color: $colour-black;
+        }
+    }
+    &__image-container{
+        height: 70%;
+        position: relative;
+    }
+    &__image{
+        border-radius: 1em 1em 0 0;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100%;
+        width: 100%;
+    }
+    &__new{
+        background-color: $colour-tertiary;
+        color: $color-new;
+        font-weight: bold;
+        font-size: 1em;
+        right: 0.7em;
+        top: 0em;
+        padding: 0.4em;
+        position: absolute;
+    }
+    &__text-container{
+        align-items: flex-start;
+        display: flex;
+        flex-flow: column wrap;
+        height: 30%;
+        justify-content: space-around;
+        padding: 0 1em;
+    }
+    &__heading{
+        font-size: 1.2em;
+        margin: 0.8em 0 0 0;
+        width: 80%;
+    }
+    &__place{
+        font-size: 1.1em;
+        margin: 0 0 0.5em 0;
+    }
+    &__like{
+        font-size: 1.5em;
+        margin: 0 0 0 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+/* ASIDE howto */ 
+
+.howto{
+    background: $colour-white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2.5em 7%;
+    &__heading{
+        align-self: flex-start;
+        font-size: 1.7em;
+        margin: 0 0 0.5em 0;
+    }
+    &__box{
+        align-items: center;
+        background-color: $bg-articles;
+        border-radius: 1em;
+        box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
+        display: flex;
+        font-size: 1.1em;
+        font-weight: bold;
+        height: 4em;
+        justify-content: center;
+        margin-bottom: 1.5em;
+        position: relative;
+        &--selected{
+            background-color: $bg-howto-selected;
+        }
+    }
+    &__number{
+        background-color: $colour-primary;
+        border-radius: 50%;
+        color: $colour-white;
+        left: -15px;
+        padding: 0.2em 0.5em; 
+        position: absolute;
+    }
+    &__icon{
+        color: grey;
+        font-size: 1.2em;
+        margin-right: 1em;
+        &--selected{
+            color: $colour-primary;
+        }
+    }
+}
+
+
+
+
+
+
+

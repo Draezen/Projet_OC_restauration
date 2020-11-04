@@ -1,0 +1,54 @@
+/* -------------------------------------------  Header  ------------------------------------------- */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    &__logo{
+        background-color: $colour-white;
+        padding: 1em 0;
+    }
+    &-flex{
+        align-items: center;
+        background-color: $bg-articles;
+        display: flex;
+        flex-direction: column;
+        height: 24em;
+        justify-content: space-between;
+    }
+    &__search{
+        align-items: center;
+        background-color: $bg-header-search;
+        border-style: solid none none none;
+        border-top: 0.2em solid $border-header-search;   
+        display: flex;
+        height: 4em;
+        justify-content: space-around;
+        width: 100%;
+        i{
+            font-size: 1.2em;
+            margin-right: 1em;
+            text-align: right;
+            width: 30%;
+        }
+        input{
+            background-color: $bg-header-search;
+            border-style: none;
+            font-size: 1.4em;
+            width: 65%;
+        }
+    }
+    &__heading{
+        font-size: 1.6em;
+        margin: 0;
+        text-align: center;
+        width: 80%;
+    }
+    &__description{
+        font-size: 1.1em;
+        font-family: 'Roboto-Light';
+        margin: 0;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+}
+
