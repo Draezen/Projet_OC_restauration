@@ -13,3 +13,9 @@ $bg-howto-selected: #9356dc33;
 $color-new: #008766;
 
 $bg-footer:#353535;
+
+$breakpoints: (
+    mobile: 599px,
+    tablet: 600px,
+    desktop :1024px
+);

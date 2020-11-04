@@ -61,6 +61,13 @@ body {
   padding: 1em 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    height: 10em;
+    padding: 2em 0;
+  }
+}
+
 .header-flex {
   align-items: center;
   background-color: #f6f6f6;
@@ -68,6 +75,12 @@ body {
   flex-direction: column;
   height: 24em;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  .header-flex {
+    height: 28em;
+  }
 }
 
 .header__search {
@@ -81,11 +94,26 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 1024px) {
+  .header__search {
+    border-top: 0.5em solid #d1d1d1;
+    height: 6em;
+  }
+}
+
 .header__search i {
   font-size: 1.2em;
   margin-right: 1em;
   text-align: right;
   width: 30%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__search i {
+    font-size: 2em;
+    margin-right: 0;
+    width: 40%;
+  }
 }
 
 .header__search input {
@@ -95,11 +123,24 @@ body {
   width: 65%;
 }
 
+@media screen and (min-width: 1024px) {
+  .header__search input {
+    font-size: 1.7em;
+    width: 55%;
+  }
+}
+
 .header__heading {
   font-size: 1.6em;
   margin: 0;
   text-align: center;
   width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__heading {
+    font-size: 1.8em;
+  }
 }
 
 .header__description {
@@ -108,6 +149,12 @@ body {
   margin: 0;
   padding-bottom: 1em;
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__description {
+    font-size: 1.5em;
+  }
 }
 
 /* --------------------------------------  Navigation  -------------------------------------------*/
@@ -142,6 +189,14 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5em;
+    padding: 1.2em 0.8em;
+    width: 35%;
+  }
+}
+
 /* ASIDE howto */
 .howto {
   background: #ffffff;
@@ -151,10 +206,22 @@ body {
   padding: 2.5em 7%;
 }
 
+@media screen and (min-width: 1024px) {
+  .howto {
+    padding: 3em 20% 0 20%;
+  }
+}
+
 .howto__heading {
   align-self: flex-start;
   font-size: 1.7em;
   margin: 0 0 0.5em 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .howto__heading {
+    font-size: 2.5em;
+  }
 }
 
 .howto__box {
@@ -173,6 +240,14 @@ body {
 
 .howto__box--selected {
   background-color: #9356dc33;
+}
+
+@media screen and (min-width: 1024px) {
+  .howto__box {
+    font-size: 2em;
+    height: 4em;
+    margin-bottom: 2.5em;
+  }
 }
 
 .howto__number {
@@ -280,6 +355,13 @@ body {
   flex-direction: column;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer {
+    align-items: center;
+    padding: 1em;
+  }
+}
+
 .footer__heading {
   color: #ffffff;
   font-family: 'Shrikhand';
@@ -289,6 +371,14 @@ body {
   padding-left: 1.4em;
 }
 
+@media screen and (min-width: 1024px) {
+  .footer__heading {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer__list {
   list-style: none;
   padding-left: 1.5em;
@@ -296,6 +386,14 @@ body {
 
 .footer__list li {
   margin-bottom: 0.7em;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
 }
 
 .footer__icon {

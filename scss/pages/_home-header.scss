@@ -6,6 +6,10 @@
     &__logo{
         background-color: $colour-white;
         padding: 1em 0;
+        @include breakpoint(desktop){
+            height: 10em;
+            padding: 2em 0;
+        }
     }
     &-flex{
         align-items: center;
@@ -14,6 +18,9 @@
         flex-direction: column;
         height: 24em;
         justify-content: space-between;
+        @include breakpoint(desktop){
+            height: 28em;
+        }
     }
     &__search{
         align-items: center;
@@ -24,17 +31,30 @@
         height: 4em;
         justify-content: space-around;
         width: 100%;
+        @include breakpoint(desktop){
+            border-top: 0.5em solid $border-header-search;
+            height: 6em;
+        }
         i{
             font-size: 1.2em;
             margin-right: 1em;
             text-align: right;
             width: 30%;
+            @include breakpoint(desktop){
+                font-size: 2em;
+                margin-right: 0;
+                width: 40%;
+            }
         }
         input{
             background-color: $bg-header-search;
             border-style: none;
             font-size: 1.4em;
             width: 65%;
+            @include breakpoint(desktop){
+                font-size: 1.7em;
+                width: 55%;
+            }
         }
     }
     &__heading{
@@ -42,6 +62,9 @@
         margin: 0;
         text-align: center;
         width: 80%;
+        @include breakpoint(desktop){
+            font-size: 1.8em;
+        }
     }
     &__description{
         font-size: 1.1em;
@@ -49,6 +72,9 @@
         margin: 0;
         padding-bottom: 1em;
         text-align: center;
+        @include breakpoint(desktop){
+            font-size: 1.5em;
+        }
     }
 }
 

@@ -5,6 +5,10 @@
     color: $colour-white;
     display: flex;
     flex-direction: column;
+    @include breakpoint(desktop){
+        align-items: center;
+        padding: 1em;
+    }
     &__heading{
         color: $colour-white;
         font-family: 'Shrikhand';
@@ -12,12 +16,22 @@
         font-weight: normal;
         margin-bottom: 0;
         padding-left: 1.4em;
+        @include breakpoint(desktop){
+            font-size: 2.5em;
+            margin: 0 ;
+            padding: 0;
+        }
     }
     &__list{
         list-style: none;
         padding-left: 1.5em;
         li{
             margin-bottom: 0.7em;
+        }
+        @include breakpoint(desktop){
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
         }
     }
     &__icon{
