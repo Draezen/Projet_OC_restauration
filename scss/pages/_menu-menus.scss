@@ -30,7 +30,7 @@
     padding: 0.7em;
     &:hover{
         cursor: pointer;
-    }
+    }  
     @include breakpoint(desktop){
         margin-bottom: 1.5em;
         padding: 1em;
@@ -39,6 +39,9 @@
         flex-basis: 90%;
         font-size: 1.2em;
         margin: 0 0 0.4em 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         @include breakpoint(desktop){
             font-size: 1.3em;
         }
@@ -50,6 +53,9 @@
         flex-basis: 90%;
         font-size: 0.9em;
         margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         @include breakpoint(desktop){
             font-size: 1em;
         }
