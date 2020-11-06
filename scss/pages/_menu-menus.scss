@@ -14,6 +14,9 @@
             border-bottom: 0.2em solid $colour-tertiary;
             padding-bottom: 0.2em;
         }
+        @include breakpoint(desktopL){
+            font-size: 1.2em;
+        }
     }
 }
 
@@ -28,20 +31,42 @@
     &:hover{
         cursor: pointer;
     }
+    @include breakpoint(desktop){
+        margin-bottom: 1.5em;
+        padding: 1em;
+    }
     &__heading{
         flex-basis: 90%;
         font-size: 1.2em;
         margin: 0 0 0.4em 0;
+        @include breakpoint(desktop){
+            font-size: 1.3em;
+        }
+        @include breakpoint(desktopL){
+            font-size: 1.4em;
+        }
     }
     &__caption{
         flex-basis: 90%;
         font-size: 0.9em;
         margin: 0;
+        @include breakpoint(desktop){
+            font-size: 1em;
+        }
+        @include breakpoint(desktopL){
+            font-size: 1.2em;
+        }
     }
     &__price{
         font-weight: bold;
         flex-basis: 10%;
         margin: 0;
+        @include breakpoint(desktop){
+            font-size: 1em;
+        }
+        @include breakpoint(desktopL){
+            font-size: 1.2em;
+        }
     }
 }
 

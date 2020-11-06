@@ -7,6 +7,16 @@
     padding: 5%;
     top: -3em;
     z-index: 1;
+    @include breakpoint(tablet){
+        padding: 0 5%;
+    }
+    @include breakpoint(desktop){
+        border-radius: 4em 4em 0 0;
+        padding: 0 10%;
+    }
+    @include breakpoint(desktopL){
+        padding: 0 20%;
+    }
     &__container{
         align-items: center;
         display: flex;
@@ -18,9 +28,18 @@
         font-size: 1.7em;
         font-weight: normal;
         margin: 0;
+        @include breakpoint(tablet){
+            font-size: 1.8em;
+        }
+        @include breakpoint(desktop){
+            font-size: 2em;
+        }
     }
     &__like{
         font-size: 1.7em;
+        @include breakpoint(desktop){
+            font-size: 2em;
+        }
         &:hover{
             cursor: pointer;
         }

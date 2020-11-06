@@ -3,4 +3,48 @@
 .header{
     display: flex;
     flex-direction: column;
+    &__nav{
+        background-color: $colour-white;
+        display: flex;
+        justify-content: center;
+        padding: 1.7em 1.5em;
+    }
+    &__banner{
+        max-height: 15em;
+        object-fit: cover;
+        object-position: 100%;
+        width: 100%;
+        @include breakpoint(tablet){
+            max-height: 20em;
+        }
+        @include breakpoint(desktop){
+            max-height: 25em;
+        }
+        @include breakpoint(desktopL){
+            max-height: 30em;
+        }
+    }
+    &__icon{
+        font-size: 1.2em;
+        left: 1.5em;
+        padding-top: 0.3em;
+        position: absolute;
+        @include breakpoint(tablet){
+            font-size: 1.7em;
+            left: 1.8em;
+            top: 2.5rem;
+        }
+        @include breakpoint(desktopL){
+            font-size: 2em;
+            top: 52px;
+        }
+    }
+    &__logo{
+        @include breakpoint(tablet){
+            height: 4em;
+        }
+        @include breakpoint(desktopL){
+            height: 6em;
+        }
+    }
 }
