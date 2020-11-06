@@ -6,15 +6,18 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 2.5em 7%;
-    @include breakpoint(desktop){
-          padding: 3em 20% 0 20%;
+    @include breakpoint(tablet){
+        padding: 3em 25% 0 25%;
+    }
+    @include breakpoint(desktopL){
+    padding: 3em 30% 0 30%;
     }
     &__heading{
         align-self: flex-start;
         font-size: 1.7em;
         margin: 0 0 0.5em 0;
         @include breakpoint(desktop){
-         font-size: 2.5em; 
+            font-size: 2.5em; 
         }
     }
     &__box{
@@ -33,9 +36,9 @@
             background-color: $bg-howto-selected;
         }
         @include breakpoint(desktop){
-            font-size: 2em;
-            height: 4em;
-            margin-bottom: 2.5em;
+            font-size: 1.5em;
+            height: 3em;
+            margin-bottom: 1.5em;
         }
     }
     &__number{

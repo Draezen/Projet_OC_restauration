@@ -6,7 +6,15 @@
     &__logo{
         background-color: $colour-white;
         padding: 1em 0;
+        @include breakpoint(tablet){
+            height: 8em;
+            padding: 2em 0;
+        }
         @include breakpoint(desktop){
+            height: 9em;
+            padding: 2em 0;
+        }
+        @include breakpoint(desktopL){
             height: 10em;
             padding: 2em 0;
         }

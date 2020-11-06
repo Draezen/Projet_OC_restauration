@@ -5,11 +5,28 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 7%;
-    &__heading{
-        font-size: 1.7em;
+    @include breakpoint(tablet){
+        padding: 2% 10%;
     }
     @include breakpoint(desktop){
-          
+        justify-content: space-between;
+        padding: 2%;
+    }
+    @include breakpoint(desktopL){
+        padding: 0 4%;
+    }
+    &__heading{
+        font-size: 1.7em;
+        @include breakpoint(desktop){
+            font-size: 2em;
+        }
+    }
+    &__flex{
+        @include breakpoint(desktop){
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -21,6 +38,14 @@
     border-radius: 1em;
     height: 17em;
     margin-bottom: 1.5em;
+    @include breakpoint(desktop){
+        height: 22em;
+        width: 48%;
+    }
+    @include breakpoint(desktopL){
+        margin-bottom: 4em;
+        width: 46%;
+    }
     a{
         color: $colour-black;
         &:visited{
@@ -30,6 +55,9 @@
     &__image-container{
         height: 70%;
         position: relative;
+        @include breakpoint(desktop){
+            //height: 80%;
+        }
     }
     &__image{
         border-radius: 1em 1em 0 0;
@@ -55,19 +83,31 @@
         height: 30%;
         justify-content: space-around;
         padding: 0 1em;
+        @include breakpoint(desktop){
+            //height: 20%;
+        }
     }
     &__heading{
-        font-size: 1.2em;
-        margin: 0.8em 0 0 0;
+        font-size: 1.2rem;
+        margin: 0.8rem 0 0 0;
         width: 80%;
+        @include breakpoint(tablet){
+            font-size: 1.4em;
+        }
     }
     &__place{
         font-size: 1.1em;
         margin: 0 0 0.5em 0;
+        @include breakpoint(desktop){
+            margin: 0 0 1.5em 0;
+        }
     }
     &__like{
         font-size: 1.5em;
         margin: 0 0 0 1em;
+        @include breakpoint(tablet){
+            font-size: 2em;
+        }
     }
 }
 

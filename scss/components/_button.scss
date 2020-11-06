@@ -18,9 +18,15 @@
     &:visited{
         color: $colour-white;
     }
+    @include breakpoint(tablet){
+        width: 35%;
+    }
     @include breakpoint(desktop){
         font-size: 1.5em;
         padding: 1.2em 0.8em;
         width: 35%;
+    }
+    @include breakpoint(desktopL){
+        width: 25%;
     }
 }

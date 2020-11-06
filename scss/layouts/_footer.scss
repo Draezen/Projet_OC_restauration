@@ -9,6 +9,9 @@
         align-items: center;
         padding: 1em;
     }
+    @include breakpoint(tablet){
+        align-items: center;
+    }
     &__heading{
         color: $colour-white;
         font-family: 'Shrikhand';
@@ -16,11 +19,20 @@
         font-weight: normal;
         margin-bottom: 0;
         padding-left: 1.4em;
+        @include breakpoint(tablet){
+            font-size: 1.5rem;
+            padding: 0;
+        }
         @include breakpoint(desktop){
             font-size: 2.5em;
             margin: 0 ;
-            padding: 0;
+            padding: 1rem 0;
         }
+        @include breakpoint(desktopL){
+            font-size: 2.8em;
+            padding: 1rem 0;
+        }
+
     }
     &__list{
         list-style: none;
@@ -30,8 +42,14 @@
         }
         @include breakpoint(desktop){
           display: flex;
+          font-size: 1.2em;
           justify-content: space-between;
+          padding: 0;
           width: 80%;
+        }
+        @include breakpoint(desktopL){
+            font-size: 1.4em;
+            width: 70%;
         }
     }
     &__icon{
