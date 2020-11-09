@@ -10,6 +10,8 @@ Mise en forme page INDEX.html Projet 3 : Ohmyfood
 @import "./base/reset";
 @import "./base/base";
 
+@import "./components/loading-spinner";
+
 @import "./pages/home-header";
 @import "./pages/home-nav";
 @import "./pages/home-howto";

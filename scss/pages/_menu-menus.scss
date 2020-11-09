@@ -5,6 +5,12 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 1.5em;
+        animation: anim-menu 1500ms both;
+        @for $i from 1 to 4 {
+            &--#{$i}{
+                animation-delay: 300ms * $i;
+            }
+        }
     }
     &__heading{
         font-size: 1em;
@@ -25,9 +31,11 @@
     border-radius: 1em;
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.3);
     display: flex;
-    flex-wrap: wrap;
+    height: 4.2em;
+    justify-content: space-between;
     margin-bottom: 1em;
-    padding: 0.7em;
+    padding-left: 0.7em;
+
     &:hover{
         cursor: pointer;
     }  
@@ -35,10 +43,38 @@
         margin-bottom: 1.5em;
         padding: 1em;
     }
+    &__column1{
+        display: flex;
+        flex-direction: column;
+        //flex-grow: 2;
+        //flex-shrink: 2;
+        justify-content: flex-end;
+        width: 66%;
+    }
+    &__column2{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        //flex-grow: 1;
+        justify-content: flex-end;
+        width: 4em;
+        //transform: translateX(20px);
+    }
+    &__column3{
+        align-items: center;
+        border-radius: 0 1em 1em 0;
+        display: flex;
+        background-color: $colour-tertiary;
+        flex-direction: column;
+        //flex-grow: 1;
+        justify-content: center;
+        width: 3.5em;
+
+        //transform: translateX(100px);
+    }
     &__heading{
-        flex-basis: 90%;
         font-size: 1.2em;
-        margin: 0 0 0.4em 0;
+        margin: 0 0 0.3em 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -50,9 +86,8 @@
         }
     }
     &__caption{
-        flex-basis: 90%;
         font-size: 0.9em;
-        margin: 0;
+        margin: 0 0 0.7em 0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -65,8 +100,7 @@
     }
     &__price{
         font-weight: bold;
-        flex-basis: 10%;
-        margin: 0;
+        margin: 0 0 0.7em 0;
         @include breakpoint(desktop){
             font-size: 1em;
         }
@@ -74,7 +108,21 @@
             font-size: 1.2em;
         }
     }
+    &__icon{
+        color: $colour-white;
+        font-size: 1.3em;
+    }
 }
 
-
-
+@keyframes anim-menu{
+    0%{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    80%{
+        opacity: 1;      
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

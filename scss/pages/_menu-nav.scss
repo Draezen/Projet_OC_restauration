@@ -1,0 +1,29 @@
+/* --------------------------------------  Navigation  -------------------------------------------*/
+
+/*.header{
+    &__nav{
+        background-color: $colour-white;
+        display: flex;
+        justify-content: center;
+        padding: 1.7em 1.5em;
+        @include breakpoint(tablet){
+            
+        }
+    }
+    &__banner{
+        max-height: 15em;
+        object-fit: cover;
+        object-position: 100%;
+        width: 100%;
+        @include breakpoint(tablet){
+            max-height: 20em;
+        }
+    }
+    &__icon{
+        font-size: 1.2em;
+        left: 1.5em;
+        padding-top: 0.3em;
+        position: absolute;
+    }
+}*/
+
