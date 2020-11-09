@@ -1,6 +1,6 @@
 .loader{
     align-items: center;
-    animation: popup 3s;
+    animation: popup 3200ms linear forwards;
     background-color: $bg-loader;
     display: flex;
     height: 100%;
@@ -27,9 +27,19 @@
 @keyframes popup{
     0%{
         opacity: 1;
+        transform: translateY(0);
+    }
+
+    90%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    91%{
+        opacity: 0;
     }
     100%{
-        opacity: 1;
+        opacity: 0;
+        transform: translateY(100vh);
     }
 
 } 
