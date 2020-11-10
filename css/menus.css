@@ -439,7 +439,7 @@ body {
 .food__icon {
   color: #ffffff;
   font-size: 1.3em;
-  transform: rotate(-270deg);
+  transform: rotate(-360deg);
 }
 
 @keyframes anim-menu {
