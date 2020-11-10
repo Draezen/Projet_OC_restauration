@@ -63,6 +63,9 @@
                 font-size: 1.7em;
                 width: 55%;
             }
+            &:focus{
+                outline: none;
+            }
         }
     }
     &__heading{
