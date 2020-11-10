@@ -325,9 +325,6 @@ body {
   margin-bottom: 1em;
   overflow-x: hidden;
   padding-left: 0.7em;
-  /*&:hover > .food__column2{
-        animation: anim-price 600ms 400ms forwards;
-    }*/
 }
 
 .food:hover {
@@ -335,15 +332,17 @@ body {
 }
 
 .food:hover > .food__column1 {
-  animation: anim-food 500ms 500ms forwards;
+  min-width: 60%;
+  transition: min-width 700ms 300ms;
 }
 
 .food:hover > .food__column3 {
-  animation: anim-select 1s forwards;
+  transform: translateX(0);
+  transition: transform 500ms;
 }
 
 .food:hover > .food__column3 i {
-  animation: select-spin 700ms 300ms forwards;
+  animation: select-spin 500ms 500ms forwards;
 }
 
 @media screen and (min-width: 1024px) {
@@ -357,6 +356,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   min-width: 80%;
+  transition: min-width 500ms;
 }
 
 .food__column2 {
@@ -375,6 +375,7 @@ body {
   flex-direction: column;
   justify-content: center;
   transform: translateX(100vw);
+  transition: transform 500ms 250ms;
   min-width: 21%;
 }
 
@@ -454,35 +455,10 @@ body {
   }
 }
 
-@keyframes anim-food {
-  0% {
-    min-width: 80%;
-  }
-  25%, 100% {
-    min-width: 60%;
-  }
-}
-
-/*@keyframes anim-price{
-    0%{
-
-    }
-    65%, 100%{
-        transform: translateX(0);
-    }
-}*/
-@keyframes anim-select {
-  0% {
-  }
-  65%, 100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes select-spin {
   0% {
   }
-  75%, 100% {
+  50%, 100% {
     transform: rotate(0deg);
   }
 }
