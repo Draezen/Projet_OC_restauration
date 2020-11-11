@@ -13,17 +13,17 @@ Mise en forme page INDEX.html Projet 3 : Ohmyfood
 /* texte */
 @font-face {
   font-family: 'Roboto';
-  src: url("./polices/Roboto-Regular.ttf");
+  src: url("/ThomasDanger_3_22102020/polices/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("./polices/Roboto-Light.ttf");
+  src: url("/ThomasDanger_3_22102020/polices/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-Thin';
-  src: url("./polices/Roboto-Thin.ttf");
+  src: url("/ThomasDanger_3_22102020/polices/Roboto-Thin.ttf");
 }
 
 /* liens */
@@ -584,4 +584,3 @@ body {
 .fa-utensils {
   margin-right: 1.1em;
 }
-/*# sourceMappingURL=menus.css.map */
