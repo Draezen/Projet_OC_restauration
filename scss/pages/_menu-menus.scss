@@ -41,6 +41,12 @@
     &:hover > .food__column1{
        min-width: 60%;
        transition: min-width 700ms 300ms;
+       @include breakpoint(tablet){
+        min-width: 68%;
+        }
+        @include breakpoint(desktop){
+            min-width: 70%;
+        }
     }
     &:hover > .food__column3{
         transform: translateX(0);
@@ -65,6 +71,7 @@
         flex-direction: column;
         justify-content: flex-end;
         min-width: 20%;
+        
     }
     &__column3{
         align-items: center;
@@ -76,6 +83,12 @@
         transform: translateX(100vw);
         transition: transform 500ms 250ms;
         min-width: 21%;
+        @include breakpoint(tablet){
+            min-width: 12%;
+        }
+        @include breakpoint(desktop){
+            min-width: 10%;
+        }
     }
     &__heading{
         font-size: 1.2em;
@@ -135,7 +148,7 @@
 
 @keyframes select-spin{
     0%{
-
+        transform: rotate(-360deg);
     }
     50%, 100%{
         transform: rotate(0deg);

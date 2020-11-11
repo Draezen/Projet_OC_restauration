@@ -3,6 +3,10 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: $colour-white;
+}
+
 /* listes*/
 ul{
     list-style: none;

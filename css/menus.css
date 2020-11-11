@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: #ffffff;
+}
+
 /* listes*/
 ul {
   list-style: none;
@@ -89,6 +93,7 @@ body {
 }
 
 .header__icon {
+  color: #000000;
   font-size: 1.2em;
   left: 1.5em;
   padding-top: 0.3em;
@@ -224,6 +229,7 @@ body {
   margin: auto;
   padding: 1em 0.8em;
   position: relative;
+  text-align: center;
   width: 65%;
   z-index: 1;
 }
@@ -336,6 +342,18 @@ body {
   transition: min-width 700ms 300ms;
 }
 
+@media screen and (min-width: 600px) {
+  .food:hover > .food__column1 {
+    min-width: 68%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .food:hover > .food__column1 {
+    min-width: 70%;
+  }
+}
+
 .food:hover > .food__column3 {
   transform: translateX(0);
   transition: transform 500ms;
@@ -377,6 +395,18 @@ body {
   transform: translateX(100vw);
   transition: transform 500ms 250ms;
   min-width: 21%;
+}
+
+@media screen and (min-width: 600px) {
+  .food__column3 {
+    min-width: 12%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .food__column3 {
+    min-width: 10%;
+  }
 }
 
 .food__heading {
@@ -457,6 +487,7 @@ body {
 
 @keyframes select-spin {
   0% {
+    transform: rotate(-360deg);
   }
   50%, 100% {
     transform: rotate(0deg);
