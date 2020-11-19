@@ -42,10 +42,10 @@
        min-width: 60%;
        transition: min-width 700ms 300ms;
        @include breakpoint(tablet){
-        min-width: 68%;
+        min-width: 78%;
         }
         @include breakpoint(desktop){
-            min-width: 70%;
+            min-width: 80%;
         }
     }
     &:hover > .food__column3{
@@ -64,6 +64,9 @@
         justify-content: space-around;
         min-width: 80%;
         transition: min-width 500ms;
+        @include breakpoint(tablet){
+            min-width: 90%;
+        }
     }
     &__column2{
         align-items: center;
@@ -71,7 +74,9 @@
         flex-direction: column;
         justify-content: flex-end;
         min-width: 20%;
-        
+        @include breakpoint(tablet){
+            min-width: 10%;
+        }     
     }
     &__column3{
         align-items: center;
