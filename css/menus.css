@@ -382,6 +382,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .food__column1 {
+    min-width: 92%;
+  }
+}
+
 .food__column2 {
   align-items: center;
   display: flex;
@@ -414,7 +420,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .food__column3 {
     min-width: 10%;
   }

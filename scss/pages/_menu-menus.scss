@@ -67,6 +67,9 @@
         @include breakpoint(tablet){
             min-width: 90%;
         }
+        @include breakpoint(desktopXL){
+            min-width: 92%;
+        }
     }
     &__column2{
         align-items: center;
@@ -91,7 +94,7 @@
         @include breakpoint(tablet){
             min-width: 12%;
         }
-        @include breakpoint(desktop){
+        @include breakpoint(desktopL){
             min-width: 10%;
         }
     }
