@@ -353,6 +353,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1800px) {
+  .food:hover > .food__column1 {
+    min-width: 82%;
+  }
+}
+
 .food:hover > .food__column3 {
   transform: translateX(0);
   transition: transform 500ms;
@@ -420,9 +426,15 @@ body {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1024px) {
   .food__column3 {
     min-width: 10%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .food__column3 {
+    min-width: 8%;
   }
 }
 
@@ -487,6 +499,18 @@ body {
   color: #ffffff;
   font-size: 1.3em;
   transform: rotate(-360deg);
+}
+
+@media screen and (min-width: 1024px) {
+  .food__icon {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .food__icon {
+    font-size: 1.7em;
+  }
 }
 
 @keyframes anim-menu {

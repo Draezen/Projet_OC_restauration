@@ -47,6 +47,9 @@
         @include breakpoint(desktop){
             min-width: 80%;
         }
+        @include breakpoint(desktopXL){
+            min-width: 82%;
+        }
     }
     &:hover > .food__column3{
         transform: translateX(0);
@@ -94,8 +97,11 @@
         @include breakpoint(tablet){
             min-width: 12%;
         }
-        @include breakpoint(desktopL){
+        @include breakpoint(desktop){
             min-width: 10%;
+        }
+        @include breakpoint(desktopXL){
+            min-width: 8%;
         }
     }
     &__heading{
@@ -138,6 +144,12 @@
         color: $colour-white;
         font-size: 1.3em;
         transform: rotate(-360deg);
+        @include breakpoint(desktop){
+            font-size: 1.5em;
+        }
+        @include breakpoint(desktopXL){
+            font-size: 1.7em;
+        }
     }
 }
 
